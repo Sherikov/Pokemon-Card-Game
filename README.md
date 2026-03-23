@@ -35,7 +35,8 @@ This project was created as practice for working with React hooks, especially `u
   npm run dev
   ```
 5. Deployment
-The project is live and can be played here: Pokemon Memory Game on GitHub Pages
+   
+The project is live and can be played here: [Pokemon Memory Game on GitHub Pages](https://sherikov.github.io/Pokemon-Card-Game/)
 
 ## Author
 Sherikov Nafasbek 
