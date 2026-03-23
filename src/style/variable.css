@@ -1,0 +1,15 @@
+﻿:root {
+  --bg-page: #0d0d0d;
+  --console-base: #d9d9d9;
+  --console-light: #f3f3f3;
+  --console-dark: #bcbcbc;
+  --screen-base: #d9ec4e;
+  --screen-inner-shadow: #bfd53f;
+  --pad-base: #6c7807;
+  --pad-light: #85920f;
+  --pad-dark: #525d05;
+  --btn-red-base: #ba2747;
+  --btn-red-dark: #8d1531;
+  --card-front-bg: #fbfce9;
+  --card-border: #e0e7a8;
+}

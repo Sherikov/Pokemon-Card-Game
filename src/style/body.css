@@ -1,0 +1,110 @@
+﻿html,
+body,
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    background:
+        radial-gradient(circle at 50% 30%, rgba(48, 48, 48, 0.18), transparent 26%),
+        linear-gradient(180deg, #101010 0%, #060606 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: #354100;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 16px 40px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#root::before {
+    content: "";
+    position: absolute;
+    left: 18%;
+    right: 18%;
+    bottom: 6%;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.42);
+    filter: blur(30px);
+}
+
+#root > * {
+    position: relative;
+    z-index: 1;
+}
+
+.app-shell {
+    width: 100%;
+    min-height: calc(100vh - 68px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-link {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(248, 255, 215, 0.92);
+    color: #314000;
+    text-decoration: none;
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(110, 128, 18, 0.18);
+    backdrop-filter: blur(8px);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+    z-index: 5;
+}
+
+.github-link:hover {
+    transform: translateY(-2px);
+    background: rgba(251, 255, 228, 0.98);
+    box-shadow:
+        0 16px 28px rgba(0, 0, 0, 0.34),
+        inset 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.github-link svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.github-link span {
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+@media (max-width: 640px) {
+    #root {
+        padding-top: 78px;
+    }
+
+    .github-link {
+        top: 14px;
+        right: 14px;
+        padding: 9px 12px;
+    }
+
+    .github-link span {
+        display: none;
+    }
+}

@@ -1,0 +1,92 @@
+﻿.btn-reset {
+    align-self: start;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 60px;
+    gap: 10px;
+}
+
+.btn-reset h3 {
+    margin: 0;
+    font-size: 0.6em;
+    font-weight: 500;
+    color: #2f2f2f;
+}
+
+.reset {
+    width: 60px;
+    height: 10px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(180deg, #3c3c3c 0%, #111111 100%);
+    box-shadow: 0px 4px 0px 0px #858484;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.reset:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #050505;
+}
+
+.action-btn {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    transform: rotate(332deg);
+    position: absolute;
+    bottom: 91px;
+    align-items: center;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 0px 0px var(--btn-red-dark);
+    border: none;
+    background-color: var(--btn-red-base);
+    color: white;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.btn:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #730000;
+}
+
+.d-pad-button {
+    align-self: start;
+    grid-row: 2 / 3;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 100px;
+    height: 140px;
+    transition: transform 0.1s, filter 0.1s;
+}
+
+.d-pad-button svg {
+    filter: drop-shadow(0 5px 0 rgba(10, 10, 10, 0.5));
+}
+
+.d-pad-button:active {
+    transform: scale(0.95);
+}
+
+.d-pad-button:focus {
+    outline: none;
+}
+
+.d-pad-button:focus-visible {
+    outline: 2px dashed #1a1a1a;
+    outline-offset: 4px;
+}
